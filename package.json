@@ -1,0 +1,65 @@
+{
+  "name": "@nosth/notify",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+	},
+	"eslintConfig": {
+		"parserOptions": {
+			"parser": "babel-eslint",
+			"sourceType": "module"
+		},
+		"env": {
+			"browser": true,
+			"es6": true
+		},
+		"globals": {
+			"Vue": true
+		},
+		"settings": {
+			"import/resolver": {
+				"webpack": {
+					"config": "build/webpack.base.conf.js"
+				}
+			}
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:vue/recommended"
+		],
+		"rules": {
+			"vue/html-indent": 0,
+			
+			"arrow-parens": 0,
+			"no-tabs": 0,
+			
+			"no-console": 1,
+			"generator-star-spacing": 0,
+			"vue/max-attributes-per-line": [
+				0,
+				{
+					"singleline": 0
+				}
+			],
+			"vue/html-self-closing": [
+				0,
+				{
+					"html": {
+						"void": "never",
+						"normal": "always",
+						"component": "always"
+					},
+					"svg": "always",
+					"math": "always"
+				}
+			]
+		}
+	},
+	"eslintIgnore": ["index.js", "Toast.vue"]
+}
